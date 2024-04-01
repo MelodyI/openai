@@ -1,17 +1,14 @@
 import os
 from openai import OpenAI
 
-# 这个是PPT上的例子，已经过时了
-# api_key = os.getenv("OPENAI_API_KEY")
-# print(api_key)
-# openai.api_key = api_key
-#
-# print(openai.Model.list())
-#
+import demo0
+import demo1
 
-client = OpenAI(
-    # This is the default and can be omitted
-    api_key=os.environ.get("OPENAI_API_KEY"),
-)
+if __name__ == '__main__':
+    client = OpenAI(
+        api_key=os.environ.get("OPENAI_API_KEY"),
+    )
+    demo0.test(client)
+    demo1.test(client)
 
-print(client.models.list())
+# 如何用向量数据库节省资源
