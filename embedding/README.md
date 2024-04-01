@@ -1,5 +1,7 @@
 # Embedding
 
+tiktoken是一种BPE分词器
+
 ```
 leaf.shi@advanch-mbp embedding % python3 ./main.py 
 --第一步，显示前两行数据--

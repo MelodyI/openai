@@ -8,6 +8,8 @@ import matplotlib
 from sklearn.manifold import TSNE
 from sklearn.cluster import KMeans
 
+print(tiktoken.encoding_for_model("gpt-3.5-turbo"))
+
 # 第一步，加载数据集
 input_data_path = "data/fine_food_reviews_1k.csv"
 df = pd.read_csv(input_data_path, index_col=0)
